@@ -1,0 +1,201 @@
+{
+  "id": "altered-carbon-rpg",
+  "title": "Altered Carbon RPG",
+  "description": "Private Foundry VTT v14 implementation of the Altered Carbon RPG 2020 mechanics, built from the supplied Core Rulebook and Quick Start. Requires a legally owned Core Rulebook; no official artwork or source PDFs are included.",
+  "version": "1.0.0-rc1",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "authors": [
+    {
+      "name": "Dracouroboros"
+    }
+  ],
+  "esmodules": [
+    "altered-carbon-rpg.mjs"
+  ],
+  "styles": [
+    "styles/altered-carbon.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "character": {
+        "htmlFields": [
+          "biography"
+        ]
+      },
+      "npc": {
+        "htmlFields": [
+          "biography",
+          "secrets.agenda"
+        ]
+      },
+      "threat": {
+        "htmlFields": [
+          "biography",
+          "tactics"
+        ]
+      },
+      "ai": {
+        "htmlFields": [
+          "biography",
+          "construct.systems",
+          "construct.assets",
+          "construct.permissions",
+          "construct.directives"
+        ]
+      },
+      "vehicle": {
+        "htmlFields": [
+          "biography",
+          "vehicle.systems"
+        ]
+      }
+    },
+    "Item": {
+      "sleeve": {
+        "htmlFields": [
+          "description",
+          "appearance",
+          "complications"
+        ]
+      },
+      "archivedSleeve": {
+        "htmlFields": [
+          "description",
+          "appearance",
+          "complications"
+        ]
+      },
+      "skill": {
+        "htmlFields": [
+          "description",
+          "rulesText"
+        ]
+      },
+      "trait": {
+        "htmlFields": [
+          "description",
+          "trigger",
+          "effect"
+        ]
+      },
+      "specialisation": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "weapon": {
+        "htmlFields": [
+          "description",
+          "triggeredEffects",
+          "upgrades"
+        ]
+      },
+      "armour": {
+        "htmlFields": [
+          "description",
+          "upgrades"
+        ]
+      },
+      "equipment": {
+        "htmlFields": [
+          "description",
+          "upgrades"
+        ]
+      },
+      "augmentation": {
+        "htmlFields": [
+          "description",
+          "upgrades"
+        ]
+      },
+      "baggage": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "condition": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "relationship": {
+        "htmlFields": [
+          "description",
+          "secret",
+          "historicalIncident",
+          "presentAgenda",
+          "recognitionClues",
+          "evidence"
+        ]
+      },
+      "clue": {
+        "htmlFields": [
+          "description",
+          "secret"
+        ]
+      },
+      "memory": {
+        "htmlFields": [
+          "description",
+          "secret"
+        ]
+      },
+      "creditSet": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "software": {
+        "htmlFields": [
+          "description",
+          "triggeredEffects"
+        ]
+      },
+      "virtualConstruct": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "injury": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "scandal": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "network": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "resourceEntry": {
+        "htmlFields": [
+          "description"
+        ]
+      }
+    }
+  },
+  "socket": true,
+  "grid": {
+    "distance": 1,
+    "units": "zone"
+  },
+  "primaryTokenAttribute": "resources.health",
+  "secondaryTokenAttribute": "resources.ego",
+  "url": "https://github.com/pacts-and-polyhedrals/altered-carbon-unofficial",
+  "manifest": "https://github.com/pacts-and-polyhedrals/altered-carbon-unofficial/releases/latest/download/system.json",
+  "download": "https://github.com/pacts-and-polyhedrals/altered-carbon-unofficial/releases/download/v1.0.0-rc1/altered-carbon-rpg-v1.0.0-rc1.zip"
+}
