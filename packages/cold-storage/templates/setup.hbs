@@ -1,0 +1,10 @@
+<section class="cs-setup">
+<h2>Cold Storage: The Faces We Left Behind</h2>
+<p>Import or update the source-controlled actors, sleeves, skills, contacts, relationships, factions, revelations and journals.</p>
+<button type="button" data-action="import"><i class="fa-solid fa-database"></i> Import / Update Cold Storage</button>
+<h3>Six-of-eight selection</h3>
+<p>Select exactly six pregens. The remaining two are flagged as reserve/missing stacks.</p>
+<div class="cs-pregen-grid">{{#each pregens}}<div class="cs-pregen"><label><input type="checkbox" name="activePregen" value="{{id}}" {{#if checked}}checked{{/if}}> <strong>{{name}}</strong></label><div><select data-user-for="{{id}}"><option value="">Unassigned</option>{{#each ../users}}<option value="{{id}}">{{name}}</option>{{/each}}</select><button type="button" data-action="assign" data-pc-id="{{id}}">Assign</button></div></div>{{/each}}</div>
+<button type="button" data-action="applySelection">Apply six-pregen selection</button>
+<p class="hint">Ownership is intentionally explicit. Contacts and GM identity data remain GM-only.</p>
+</section>
